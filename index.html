@@ -1,216 +1,159 @@
 <!DOCTYPE html>
-<html>
-<title>OlegNegrutaCV</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-</style>
-<body class="w3-light-grey">
-
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oleg Negruta</title>
+    <link rel="stylesheet" href='style.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <img src="poz.jpg" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-white">
-            <h2>Oleg Negruta</h2>
-          </div>
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="logo">
+            <h4>Personal Website</h4>
         </div>
-        <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Graduate Software Engineer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>London, UK</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>negrutaoleg@gmail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+44 742 743 9531</p>
-          <hr>
+<ul class='nav-links'>
+    <li><a href='#about'>About</a></li>
+    <li><a href='#slider'>Hobbies</a></li>
+    <li><a href='#links'>Links</a></li>
+    <li><a href='#cv'>CV</a></li>
+    <li><button class='theme-toggle-btn'>Theme</button></li>
+</ul>
+<div class="burger">
+    <div class = 'line1'></div>
+    <div class = 'line2'></div>
+    <div class = 'line3'></div>
+</div>
+    </nav>
+</header>
 
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <p>Programing: C, C++, Matlab, Phyton, VBA, R, HTML5, CSS3, Java, VScode, Linux</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">100%</div>
-          </div>
-          <p>Good command of electronic schematic capture and simulation programs like Autocad, Multisim, LabView, LTSpice, Proteus, OrCad, etc.</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">
-              <div class="w3-center w3-text-white">100%</div>
-            </div>
-          </div>
-          <p>Good Electronics and Networks knowledge + CCNA Routing and Switching Introduction to Network</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">100%</div>
-          </div>
-          <br>
+<main>
+        <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
 
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-          <p>English</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
-          </div>
-          <p>Romanian</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
-          </div>
-          <p>Russian</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
-          </div>
-          <br>
-        </div>
-      </div><br>
-
-    <!-- End Left Column -->
+    <!-- /////////////////intro/////// -->
+<div class="intro">
+    <div class="container">
+        <span class="text1">HI There!</span>
+        <span class="text2">I'm Oleg</span>
     </div>
-
-    <!-- Right Column -->
-    <div class="w3-twothird">
-    
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Industrial Engineer I / Plexus, Livingstone, Kelso (United Kingdom)</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>March 2020 - June 2020</h6>
-          <p>A personal project whose goal was to understand the process entitlement of the manufacturing process. Taught myself VBA and R programming in less than a month. Used these programming languages to build a manufacturing model that will help to predict the outcomes based on the design (process and product) and processing the data through a statistical method for quality improvement with a Plexus approach.</p>
-          <p>Then implemented a Python script to automate the process of collecting the data from the database and importing it in the spreadsheets. This model helps to define the process yield of each test station and the whole process.</p>
-          <p>Also had a basic induction in network infrastructure: Design, plan, and implementation of the network (data, voice); Configure and deploy an array of network devices (switches, routers, wireless access points, firewall, etc.) and systems (Cisco, PABX).</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Erasmus Student Exchange / Higher Institute for Electronics and Digital Training, Lille (France)</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>October 2019 - Dec 2019</h6>
-          <p>Team project -Smart wheelchair for people with vision and motion disabilities.</p>
-          <p>Build a surveillance system using the camera module for Raspberry pi 4 to help people with vision disabilities. As hardware was used Raspberry Pi or Jetson Nano with the camera module or another USB webcam and a Doppler radar from National Instruments.
-            The logic was fully implemented on Python with its deep neural networks (dnn) module from the OpenCV library. The system is able to detect nearby objects with help of radar or Single Shot Detectors (SSD) algorithm and recognize them with Mobile Nets neural network. The output is an audio message through the headset.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Erasmus Placement / University of Highlands and Islands, Moray College, Elgin (United Kingdom)</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>July 2019 - September 2019</h6>
-          <p>Internship in the IT department, working as an IT Assistant and having duties like laptop imaging, tidying of cabling in comm rooms, asset checking (checking equipment in rooms against the database), shadowing of technologists, switch configuration, radius authentication, monitoring, resetting.</p>
-          <p>Implemented automation scripts on operating systems and software updates using Python and bash programming.
-            Installed and configured two host servers with VMware ESXi virtualization O/S. Installed Server 2012r2 on a server. Created an iSCSI target on the 2012r2 server. Connected the iSCSI to the ESXi host servers as storage, installed VCSA, and used vCenter Service Appliance (VCSA) to manage the two VMware ESXi hosts. Also installed virtual machines using VCSA. Set up a standalone network.</p>
-          <br>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Work Experience Student / Celestica Inc., Oradea (Romania)</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>April 2019 - June 2019</h6>
-          <p>Developed basic skills and gained knowledge from on job training, such as manual and automotive PCB assemblies, testing, conformal coating, PLC programming. Looked for opportunities to improve work productivity and efficiency. Also applied new work requirements with minimal supervision.</p>
-          <p>Able to work cooperatively in a team and the cross-functional team as needed and applied new work requirements with minimal supervision eliminating scrap or reworks.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Industrial Engineer Associate / Plexus Corp, Oradea (Romania)</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2018 - September 2018</h6>
-          <p>Designed new layouts for the production line. Developed and tested new integrated systems for managing industrial production processes including human work factors, quality control, inventory control, logistics, and material flow, cost analysis, and production coordination. Built drafts and designed layouts of equipment, materials, and workspace to illustrate maximum efficiency, using drafting tools such as Autocad. Led lean manufacturing and time reduction activities within the focus factory. Applied statistical methods and perform mathematical calculations to determine manufacturing processes, staff requirements, and production standards. Estimated production cost and effect of product design changes for management review, action, and control.</p>
-          <hr>
-        </div>
-      </div>
-
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Faculty of Electrical Engineering and Informational Technology / University of Oradea (Romania)</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>October 2016 - July 2020</h6>
-          <p>Specialty in Software Network in Telecommunication.
-            Gained a broad range of knowledge regarding the basics of Electronics and Design, Telecommunication, and IT. Been engaged in several Erasmus internships and placements, Student exchange programs, and hackathons.</p>
-          <p>1st year:
-            Mathematical analysis ; Basics of Electrical Engineering 1,2,3; Electronic devices; Components and
-            passive circuits; Applied computer science; Electronic technology; Physics; Special Mathematics;
-            Internet programming technologies; Technical drawing; Materials for electronics; Linear algebra,
-            analytical and differential geometry; Programming of computers and programming languages; Internet
-            services;
-            </p>
-          <p>2nd year:
-            Analog integrated circuits; Information transmission theory; Basic electronic circuits; Signals and
-            systems1,2; SPICE models of electronic components; Digital integrated circuits1,2; Measurements in
-            electronics and telecommunications; Numerical methods; Electronic measuring instrumentation;
-            Computer-aided graphics in electronics; Object-Oriented Programming; Computer-aided graphics in
-            electronics;
-            </p>  
-          <p>3rd year:
-            Digital signal processing; Industrial electronics; microwave; Nano and microtechnologies for
-            electronics; Basis of data acquisition systems;
-            Image processing and analysis; Television; Microprocessors and microcontrollers; Telecommunication
-            circuits; General economy; reliability; Compression and encoding of information; Architecture of
-            computer systems;
-            Audio engineering; Computer networks; Electronic power supplies; radiocommunications; Industrial
-            Management; Communication techniques;
-          </p>
-          <p>4th year:
-            Digital signal processors; Telecommunication software; Networks and services; Switching techniques
-            and systems; Virtual instrumentation for electronic systems; Telecommunication protocols;
-            Radiocommunication systems; Multiplex transmission techniques and systems; Satellite
-            communications; 4G communications; Mobile communications networks; Neural networks; Network
-            and internet architectures; Optical communications; Synchronous optical networks; Security of data
-            communications; Encryption algorithms in telecommunication networks; Traffic engineering; Testing of
-            telecommunications equipment
-            </p>
-          <p>-Teacher Training -
-            1 year:The psychology of education; Fundamentals of pedagogy. Curriculum Theory and
-            Methodology;
-            2 year:Theory and methodology of training. Evaluation theory and methodology; Didactics of the
-            specialty;
-            3 year: Management of the class of students; Pedagogical practice in compulsory pre-university
-            education1,2; Computer assisted training;
-            </p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Erasmus Exchange Student / Häme University of applied sciences, Valkeakoski (Finland)</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>January 2018 - May 2018</h6>
-          <p>Gained new knowledge about Logic Programming and Human Machine Interface, Telecommunications and Information Security, Metrology + CCNA Routing and Switching: Introduction to Networks. I also achieved the A1 level in German and Finish languages.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Diploma of participation / The scientific communication session of the student scientific circles, Sibiu (Romania)</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2019</h6>
-          <p>Title: Facial recognition with OpenCV and Deep Learning on RaspberryPi</p>
-          <p>Description: OpenCV is rich in libraries for Computer Vision and Machine Learning. One of them is face recognition. With specific algorithms, the machine can detect and recognize faces from the images or videos provided. For large websites, classmates, Facebook, or Google may be familiar with this facial recognition. Google and Facebook have a quite capable face recognition and detection system.</p>
-          <br>
-        </div>
-      </div>
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Volunteering</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Advancing Partners &
-            Communication, CCF Moldova and PARTNERSHIPS FOR EVERY CHILD / Moldova</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>October 2016 - July 2020</h6>
-          <p>...</p>
-        
-          <hr>
-        </div>
-
-      </div>
-
-    <!-- End Right Column -->
+    <div >
+        <img  width= 400px height= 600px src='/img/1.JPG'img>
     </div>
-    
-  <!-- End Grid -->
-  </div>
-  
-  <!-- End Page Container -->
+</div>
+<!-- ////////////////////////why////// -->
+<br>
+<br>
+<br>
+<br>
+<div id='why'>
+    <!-- <img class="why-img" src='/img/2.JPG' width="200" height="200"> -->
+    <h4 id='about'>About</h4>
+    <span>Graduate engineer, with working knowledge in Programming, Electronics, and Networks. Enjoying problem-solving and creating helpful, reliable user experiences for clients. Been in 10 countries. Love guitars, practice sports.
+</span>
+<br>
+<br>
+<br>
+
+    <h4>Why Founders and Coders?</h4>
+    <span>I believe Founders and Coders is one of the best choices for Graduates who have a lack of experience, for people who
+    want to switch careers or acquire a new skill. Having the opportunity to be in a team with talented and professionals
+    from where you can learn and accumulate a great basement of working knowledge with which you can improve and develop as
+    a future software engineer.</span>
+</div>
+<br>
+<br>
+<br>
+<br>
+<!-- carousel///////////// -->
+<div id="slider">
+    <figure>
+        <img src="/img/hobbies/guitar.jpg">
+        <img src="/img/hobbies/python.jpg">
+        <img src="/img/hobbies/raspbery.jpg">
+        <img src="/img/hobbies/js.jpg">
+        <img src="/img/hobbies/guitar.jpg">
+    </figure>
+    <span>-Hobbies-</span>
+</div>
+<!-- /////////////////////sources -->
+    <div id='links' class='sources-title'>
+        <span >public profile links to Freecodecamp Github and Codewars</span>
+    </div>
+<div class='sources'>
+    <div>
+        <a href="https://github.com/Olejekglejek/olejekglejek.github.io">
+            <img src='/img/logo/github.png' width="200" height="200"> 
+        </a>
+    </div>
+    <div>
+        <a href="https://www.freecodecamp.org/olejekglejek">
+            <img  src='/img/logo/freecodecamp.jpeg' width="200" height="200">
+        </a> 
+    </div>
+    <div>
+        <a href="https://www.codewars.com/users/Olejekglejek">
+            <img  src='/img/logo/codewars.png' width="200" height="200"> 
+        </a>   
+    </div>
 </div>
 
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-  <p>Find me on social media.</p>
-  <a href="https://www.facebook.com/negrutaoleg/" class="fa fa-facebook-official w3-hover-opacity"></a>
-  <a class="fa fa-instagram w3-hover-opacity" href = "https://www.instagram.com/negrutaoleg/?hl=en"></a>
- <!-- <a class="fa fa-snapchat w3-hover-opacity"></a>
-  <a class="fa fa-pinterest-p w3-hover-opacity"></a>
-  <a class="fa fa-twitter w3-hover-opacity"></a> -->
-  <a class="fa fa-linkedin w3-hover-opacity" href = "https://www.linkedin.com/in/oleg-negruta/"></a>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+<!-- cv//////////////😕 -->
+<div id='cv' class="background-img">
+    <img class='back-img'src='/img/3.JPG'>
+    <div class='text-btn'>
+        <span class='img-text'>Take a look at my CV</span>
+    <!-- <button class='btn btn-pop'>Here</button> -->
+    <form method="get" action="cv.docx">
+        <button class='btn btn-pop' type="submit">Here!</button>
+    </form>
+    </div>
+</div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="ftr">
+            <h3>About</h3>
+            <ul class="content">
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Work</a></li>
+            </ul>
+        </div>
+        <div class="ftr">
+            <h3>Contact</h3>
+            <ul class="content">
+                <li><a href="#">negrutaoleg@gmail.com</a></li>
+                <li><a href="#">(+44) 742-743-9531</a></li>
+                <li><a href="#">13 Carbis Rd Limehouse, London E14 7TH</a></li>
+            </ul>
+        </div>
+        <div class="ftr">
+            <h3>Social</h3>
+            <ul class="content">
+                <li><a href="https://www.facebook.com/negrutaoleg/">Facebook</a></li>
+                <li><a href="https://www.linkedin.com/in/oleg-negruta/">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/negrutaoleg/">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="ftr">
+            <h3>Join Our Newsletter</h3>
+            <form action="#">
+                <input type="email" placeholder="Enter Your Email." required>
+                <div class="btnu">
+                    <input type="submit" value="Subscribe">
+                </div>
+            </form>
+        </div>
+
+    </div>
 </footer>
 
+
+<script src='index.js'></script>
 </body>
 </html>
- 
