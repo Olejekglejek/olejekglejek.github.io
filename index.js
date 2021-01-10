@@ -18,16 +18,26 @@ function scrollFunction() {
 //Toggle nav
     burger.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
-
+       
         //Animate Links
     navLinks.forEach((link, index) => {
-        if (link.style.animation) {
-            link.style.animation = ''
-        } else {
-            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 4  + 0.5}s`;
+        if (((link.style.animation) && (nav.style.display === "flex" )) && (window.matchMedia("(max-width: 700px)").matches)) {
+            link.style.animation = '';
+             nav.style.display = "none";
+               nav.style.right = "0px"; 
+            
         }
-        
+ 
+            
+        else {
+            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 4  + 0.5}s`;
+            nav.style.display = "flex";
+           nav.style.right = "50%"; 
+        }
+       
     })
+
+
         //Burger animation
         burger.classList.toggle('toggle');
     })
