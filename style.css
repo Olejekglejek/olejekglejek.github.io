@@ -5,8 +5,8 @@
 }
 
 nav {
-  /* position: fixed; */
-  position: relative;
+  position: fixed;
+  /* position: relative; */
   top: 0;
   width: 100%;
   display: flex;
@@ -71,6 +71,10 @@ nav {
   #why h4 {
     font-size: 64px;
   }
+  #why span {
+    font-size: 32px;
+    margin-left: 30px;
+  }
   .sources-title {
     font-size: 64px;
   }
@@ -82,10 +86,10 @@ nav {
   }
 
   .nav-links {
-    position: fixed;
-    /* position: absolute; */
+    /* position: fixed; */
+    position: absolute;
     right: 0px;
-    height: 92vh;
+    height: 70vh;
     top: 8vh;
     background-color: #581b98;
     display: flex;
@@ -114,7 +118,11 @@ nav {
     height: 450px;
   }
   #why h4 {
-    font-size: 45px;
+    font-size: 30px;
+  }
+  #why span {
+    font-size: 18px;
+    margin-left: 0px;
   }
   .sources-title span {
     font-size: 25px;
@@ -248,8 +256,8 @@ body.purple {
   font-family: "Poppins", sans-serif;
 }
 #why span {
-  font-size: 24px;
-  margin-left: 30px;
+  /* font-size: 24px; */
+  /* margin-left: 30px; */
 }
 #why h4 {
   text-transform: uppercase;
