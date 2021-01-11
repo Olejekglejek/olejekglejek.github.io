@@ -1,8 +1,9 @@
-const navSlide = () => {
-    const burger = document.querySelector('.burger')
-    const nav = document.querySelector('.nav-links')
-    const navLinks = document.querySelectorAll('.nav-links li')
-var topbutton = document.getElementById("topBtn");
+ 
+function navSlide() {
+    const burger = document.querySelector(".burger");
+    const nav = document.querySelector(".nav-links");
+    const navLinks = document.querySelectorAll(".nav-links li");
+    var topbutton = document.getElementById("topBtn");
 //topButton
 window.onscroll = function() {scrollFunction()};
 
@@ -14,43 +15,32 @@ function scrollFunction() {
   }
 }
 
-
-//Toggle nav
-    burger.addEventListener('click', () => {
-        nav.classList.toggle('nav-active');
-       
+    burger.addEventListener("click", () => {
+        //Toggle Nav
+        nav.classList.toggle("nav-active");
+        
         //Animate Links
-    navLinks.forEach((link, index) => {
-        if (((link.style.animation) && (nav.style.display === "flex" )) && (window.matchMedia("(max-width: 700px)").matches)) {
-            link.style.animation = '';
-             nav.style.display = "none";
-               nav.style.right = "0px"; 
-            
-        }
- 
-            
-        else {
-            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 4  + 0.5}s`;
-            nav.style.display = "flex";
-           nav.style.right = "50%"; 
-        }
-       
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = ""
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+            }
+        });
+        //Burger Animation
+        burger.classList.toggle("toggle");
     })
-
-
-        //Burger animation
-        burger.classList.toggle('toggle');
-    })
-    document.querySelector('.theme-toggle-btn').addEventListener('click', () => {
+         document.querySelector('.theme-toggle-btn').addEventListener('click', () => {
         document.body.classList.toggle('purple')
-    })
+    });
     
 }
+
 const app = () => {
     navSlide();
 }
-
 app()
+
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
